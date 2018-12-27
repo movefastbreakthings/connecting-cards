@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cards {
+  border-radius: 8px;
+  background: #5DD39E;
+  color: rgba(255,255,255,0.8);
+  height: 100%;
+  position: relative;
+  transition: background ease-in-out 1s;
+}
+
+.cards.start {
+  font-size: 2.5em;
+  line-height: 0.8;
+  background: #348AA7;
+}
+
+.cards.end {
+  background: #525174;
+}
+
+.card {
+  font-size: 3em;
+  font-family: 'Caveat Brush', helvetica, sans-serif;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
