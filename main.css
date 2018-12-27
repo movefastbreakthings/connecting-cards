@@ -17,7 +17,6 @@ body {
 }
 
 .cards {
-  border-radius: 8px;
   background: #5DD39E;
   color: rgba(255,255,255,0.8);
   height: 100%;
@@ -43,4 +42,29 @@ body {
   top: 50%;
   width: 100%;
   transform: translateY(-50%);
+}
+
+.btn-fullscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  opacity: 0.4;
+}
+
+.btn-fullscreen:hover,
+.btn-fullscreen:active,
+.btn-fullscreen:focus {
+  opacity: 1;
+}
+
+.btn-fullscreen svg {
+  fill: white;
+  pointer-events: none;
 }
