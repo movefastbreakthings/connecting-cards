@@ -2,6 +2,7 @@ console.log('Draw a card!');
 
 var cards = document.querySelectorAll('.cards');
 var card = document.querySelectorAll('.card');
+var count = document.querySelectorAll('.count');
 console.log('cards', cards);
 console.log('card', card);
 
@@ -55,6 +56,7 @@ var allTexts = [
   "You can be sure I will always be: "
 ];
 
+
 var gameTexts = allTexts.slice(0);
 
 for(var z = 0; z < cards.length; z++) {
@@ -68,6 +70,7 @@ for(var z = 0; z < cards.length; z++) {
           var text = gameTexts.pop()
           console.log(text);
           card[0].innerHTML = text;
+          count[0].innerHTML = gameTexts.length;
         } else {
           card[0].innerHTML = 'No more cards, play again?';
           gameTexts = allTexts.slice(0);
