@@ -7,8 +7,8 @@ console.log('Draw a card!');
 var cards = document.querySelectorAll('.cards');
 var card = document.querySelectorAll('.card');
 var count = document.querySelectorAll('.count');
-console.log('cards', cards);
-console.log('card', card);
+// console.log('cards', cards);
+// console.log('card', card);
 
 var allTexts = [
   "2 things I am doing to clean up the past:",
@@ -132,7 +132,7 @@ fullscreenButton.addEventListener('click', function (event) {
 
 var instructionsButton = document.querySelectorAll('.btn-instructions')[0];
 var instructions = document.querySelectorAll('.instructions')[0];
-console.log(instructionsButton);
+// console.log(instructionsButton);
 
 instructionsButton.onclick = function() {
   instructions.classList.toggle('active');
@@ -142,10 +142,3 @@ instructionsButton.onclick = function() {
   //   instructions.classList.add('active');
   // }
 };
-
-// ****************************
-// Offline Version
-// ****************************
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/assets/js/serviceworker.js');
-}

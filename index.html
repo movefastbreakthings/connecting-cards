@@ -34,5 +34,17 @@
         </div>
       </section>
       <script type="text/javascript" src="/assets/js/app.js" async></script>
+      <script type="text/javascript">
+          // ****************************
+          // Offline Version
+          // ****************************
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                     .register('assets/js/serviceworker.js')
+                     .then(function () { console.log('Service Worker Registered'); });
+          } else {
+            console.log('no service worker');
+          }
+      </script>
   </body>
 </html>
