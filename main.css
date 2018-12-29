@@ -59,8 +59,7 @@ body {
 }
 
 .btn-fullscreen:hover,
-.btn-fullscreen:active,
-.btn-fullscreen:focus {
+.btn-fullscreen:active {
   opacity: 1;
 }
 

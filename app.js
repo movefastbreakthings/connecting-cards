@@ -98,14 +98,21 @@ function shuffle(a) {
 var fullscreenButton = document.querySelectorAll('.btn-fullscreen')[0];
 
 fullscreenButton.addEventListener('click', function (event) {
+  // console.log('click fullscreen');
 	// Ignore clicks that weren't on the toggle button
-	if (!event.target.hasAttribute('data-toggle-fullscreen')) return;
+	if (!event.target.hasAttribute('data-toggle-fullscreen')) {
+    // console.log('not fullscreen');
+    return;
+  }
 
 	// If there's an element in fullscreen, exit
 	// Otherwise, enter it
-	if (document.fullscreenButton) {
+  console.log(document.fullscreenEnabled,document.fullscreenElement);
+	if (document.fullscreenElement) {
+    // console.log('exit fullscreen');
 		document.exitFullscreen();
 	} else {
+    // console.log('request fullscreen');
 		document.documentElement.requestFullscreen();
 	}
 }, false);
