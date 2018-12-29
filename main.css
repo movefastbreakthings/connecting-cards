@@ -44,10 +44,9 @@ body {
   transform: translateY(-50%);
 }
 
-.btn-fullscreen {
+.btn {
   position: absolute;
   top: 0;
-  right: 0;
   background: transparent;
   width: 60px;
   height: 60px;
@@ -56,10 +55,20 @@ body {
   outline: none;
   padding: 10px;
   opacity: 0.4;
+  color: white;
 }
 
-.btn-fullscreen:hover,
-.btn-fullscreen:active {
+.btn-fullscreen {
+  right: 0;
+}
+
+.btn-instructions {
+  left: 0;
+  font-size: 20px;
+}
+
+.btn:hover,
+.btn:active {
   opacity: 1;
 }
 
@@ -71,7 +80,7 @@ body {
 .count {
   font-family: 'Caveat Brush', helvetica, sans-serif;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: transparent;
   width: 60px;
@@ -86,4 +95,55 @@ body {
 .cards.start .count,
 .cards.end .count  {
   display: none;
+}
+
+.instructions {
+  font-family: 'Caveat Brush', helvetica, sans-serif;
+  overflow-y: scroll;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #cc618b;
+  padding: 50px;
+  color: white;
+  font-size: 0;
+  display: none;
+}
+
+.instructions.active {
+  display: block;
+}
+
+.instructions__section {
+  width: 33.333%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .instructions__section {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+.instructions h1 {
+  margin: 20px 0px 40px;
+  font-size: 35px;
+  line-height: 0.8;
+}
+
+.instructions h2 {
+  margin: 0px 0px 15px;
+}
+
+.instructions p {
+  font-size: 1.3em;
+  line-height: 1.5;
 }

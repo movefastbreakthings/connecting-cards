@@ -1,3 +1,7 @@
+// ****************************
+// Game logic
+// ****************************
+
 console.log('Draw a card!');
 
 var cards = document.querySelectorAll('.cards');
@@ -95,6 +99,11 @@ function shuffle(a) {
     return a;
 }
 
+
+// ****************************
+// Button fullscreen
+// ****************************
+
 var fullscreenButton = document.querySelectorAll('.btn-fullscreen')[0];
 
 fullscreenButton.addEventListener('click', function (event) {
@@ -116,3 +125,20 @@ fullscreenButton.addEventListener('click', function (event) {
 		document.documentElement.requestFullscreen();
 	}
 }, false);
+
+// ****************************
+// Button Instructions
+// ****************************
+
+var instructionsButton = document.querySelectorAll('.btn-instructions')[0];
+var instructions = document.querySelectorAll('.instructions')[0];
+console.log(instructionsButton);
+
+instructionsButton.onclick = function() {
+  instructions.classList.toggle('active');
+  // console.log('toggle instrucitons');
+  // if(instructions.contains('active')) {
+  // } else {
+  //   instructions.classList.add('active');
+  // }
+};
