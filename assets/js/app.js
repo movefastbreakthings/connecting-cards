@@ -142,3 +142,10 @@ instructionsButton.onclick = function() {
   //   instructions.classList.add('active');
   // }
 };
+
+// ****************************
+// Offline Version
+// ****************************
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/assets/js/serviceworker.js');
+}

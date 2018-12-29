@@ -65,6 +65,7 @@ body {
 .btn-instructions {
   left: 0;
   font-size: 20px;
+  padding: 15px;
 }
 
 .btn:hover,
@@ -72,8 +73,9 @@ body {
   opacity: 1;
 }
 
-.btn-fullscreen svg {
+.btn svg {
   fill: white;
+  stroke: white;
   pointer-events: none;
 }
 
