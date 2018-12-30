@@ -1,9 +1,9 @@
 var CACHE_NAME = 'connecting-cards-cache-v1';
 var urlsToCache = [
-  '/',
-  'assets/css/main.css',
-  'assets/css/normalize.css',
-  'assets/js/app.js',
+  '/index.html',
+  '/assets/css/main.css',
+  '/assets/css/normalize.css',
+  '/assets/js/app.js'
 ];
 
 self.addEventListener('install', function(event) {
