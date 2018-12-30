@@ -1,0 +1,32 @@
+.env
+/.idea
+
+# Dependency directories
+vendor
+node_modules
+bower_components
+dist
+
+# Optional npm cache directory
+.npm
+
+# SASS Cache
+.sass-cache
+.sass-cache/*
+
+# Logs
+*.log
+npm-debug.log*
+
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Images
+/app/*/
+/app/migrations

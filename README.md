@@ -4,10 +4,9 @@ https://connecting-cards.netlify.com/
 
 # Roadmap
 
-- implement offline
 - Name and Logo
 - add favicon and appicon
-- multilang
+- multilang support
 
 # Credits
 
